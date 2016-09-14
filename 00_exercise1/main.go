@@ -14,21 +14,21 @@ func main() {
 	fmt.Scan(&small)
 	fmt.Print("Now enter a big number: ")
 	fmt.Scan(&big)
-	fmt.Println("The remainder of", big, "divided by", small, "equal" +
-		" to", big % small)
+	fmt.Println("The remainder of", big, "divided by", small, "equal"+
+		" to", big%small)
 
 	for i := 0; i <= 100; i++ {
-		if i % 2 == 0 {
+		if i%2 == 0 {
 			fmt.Println(i)
 		}
 	}
 
 	for i := 1; i <= 100; i++ {
-		if i % 15 == 0 {
+		if i%15 == 0 {
 			fmt.Println(i, "-- FizzBuzz")
-		} else if i % 3 == 0 {
+		} else if i%3 == 0 {
 			fmt.Println(i, "-- Fizz")
-		} else if i % 5 == 0 {
+		} else if i%5 == 0 {
 			fmt.Println(i, "-- Buzz")
 		} else {
 			fmt.Println(i)
@@ -37,7 +37,7 @@ func main() {
 
 	sum := 0
 
-	for i := 1; i <= 1000; i++ {
+	for i := 0; i < 1000; i++ {
 
 		if i%5 == 0 {
 			sum += i
